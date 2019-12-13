@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>简约导航</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<meta content="telephone=no,email=no" name="format-detection">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-touch-fullscreen" content="yes" />
+<meta name="keywords" content="简约导航,极简主义导航,简单导航,简约网址导航"/>
+<meta name="description" content="简约导航，一个崇尚极简和实用的网址导航！" />
+<link rel="shortcut icon" href="logo.ico">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="hcss/font-awesome.css" rel="stylesheet" type="text/css">
+<!--源代码来自小呆导航 http://webjike.com，本站已获授权使用，请勿完全抄袭源码，请勿声明自己是原创-->
+<style type="text/css">
+<!--
+body {	
+    background-image: url(img/04.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.content{
+	width: 1100px;	
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    top:25%;
+}
+.qingkong{
+	right: 115px;
+	top: 15px;
+}
+.footer { 
+	color:#ffffff;
+	font-size:12px;  
+	text-align: center;
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.footer1{
+	display: none;
+}
+
+-->
+</style>
+<link rel="stylesheet" media="screen and (max-width: 768px)" href="css/yidong.css">
+<link rel="stylesheet" media="screen and (max-width: 320px)" href="css/yidong1.css">
+<!--
+<script>//使用源码请修改或者删除统计代码
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?5c68c36a88c0aac53249bd61c2c12d9c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+-->
+<!-- 百度 样式 -->
+<style type="text/css">
+	
+ul.keylist {
+    margin-left: 61px;
+    width: 353px;
+    outline: 0;
+    background: #fff;
+    color: #000000;
+    font-weight: bold;
+}
+ul.keylist li {
+    float: none;
+    padding: 3px 8px;
+}
+.keylist li:hover{
+	background-color:#f1f1f1;
+}
+body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {
+    z-index: 1;
+}
+</style>
+</head>
+
+<body>
+    <!--banner海报图-->
+	<div class="baidu baidu-2">
+			<form name="f" action="https://www.baidu.com/s" target="_blank">
+				<div id="Select-2">
+					<div class="Select-box-2" id="baidu">
+						<ul>
+                          	<li class="miji_s">秘 迹</li>
+							<li class="bing_s">必 应</li>
+							<li class="google_s">谷 歌</li>
+							<li class="baidu_s">百 度</li>															
+						</ul>
+					</div>
+					<input name="wd" id="kw-2" maxlength="100" autocomplete="off" type="text">
+				</div>
+                <div class="qingkong" id="qingkong" title="清空">x</div>
+				<input value="搜 索" id="su-2" type="submit">
+
+				<ul class="keylist"></ul>
+			</form>
+	</div>
+    <!--内容-->
+	<div class="body">
+		<div class="content">
+			<div class="jianjie">
+				<div class="jj-list">
+					<div class="jj-list-tit">学习 · 生活</div>
+					<ul class="jj-list-con">
+						<li><a href="https://www.jd.com/" class="link-3" target="_blank">京东</a></li>
+						<li><a href="https://www.tmall.com/" class="link-3" target="_blank">天猫</a></li>
+						<li><a href="https://www.taobao.com/" class="link-3" target="_blank">淘宝</a></li>					
+						<li><a href="https://weibo.com/" class="link-3" target="_blank">微博</a></li>
+						<li><a href="https://www.zhihu.com/" class="link-3" target="_blank">知乎</a></li>	
+                        <li><a href="https://hao.qq.com/qita/youxiang.html" class="link-3" target="_blank">邮箱</a></li>			
+                        <li><a href="https://www.cn-ki.net/" class="link-3" target="_blank">iData</a></li>	
+						<li><a href="https://www.mvyxws.com//" class="link-3" target="_blank">医学微视</a></li>
+						<li><a href="https://twitter.com/" class="link-3" target="_blank">twitter</a></li>	
+
+					</ul>
+				</div>
+			    <div class="jj-list">
+					<div class="jj-list-tit">常用 · 工作</div>
+					<ul class="jj-list-con">
+						
+						<li><a href="http://ehr.aisino.com" class="link-3" target="_blank">EHR</a></li>
+						<li><a href="http://aos.aisino.com/newdoc/" class="link-3" target="_blank">AOS</a></li>
+						<li><a href="http://oa.aisino.com" class="link-3" target="_blank">OA</a></li>
+						<li><a href="http://mail.hichina.com/" class="link-3" target="_blank">阿里邮箱</a></li>
+						<li><a href="http://192.168.35.64:8080/ProjectManage/pt/canvas?formid=a8login" class="link-3" target="_blank">敏捷</a></li>
+						<li><a href="http://192.168.29.254:7001/csgl_Test1/" class="link-3" target="_blank">缺陷</a></li>
+						<li><a href="http://bpmfk.aisino.com/login/Login.jsp" class="link-3" target="_blank">报销</a></li>
+						<li><a href="http://172.16.2.122:8085/ZHYW/pt/canvas?formid=zh_sys_login" class="link-3" target="_blank">CRM</a></li>
+						<li><a href="http://192.168.35.230:8080/Ukey/canvas/login2" class="link-3" target="_blank">Ukey</a></li>											
+					</ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit">学习 · 博客</div>
+					<ul class="jj-list-con">
+						<li><a href="https://github.com/spring2go" class="link-3" target="_blank">波波微课</a></li>
+						<li><a href="http://www.iocoder.cn/categories/Apollo/" class="link-3" target="_blank">芋道源码</a></li>	
+						<li><a href="https://developer.aliyun.com/group" class="link-3" target="_blank">阿里开发</a></li>
+						<li><a href="https://zhuanlan.zhihu.com/ctriptech" class="link-3" target="_blank">携程技术</a></li>	
+						<li><a href="https://tech.meituan.com/" class="link-3" target="_blank">美团技术</a></li>	
+						<li><a href="https://segmentfault.com/t/%E6%9E%B6%E6%9E%84" class="link-3" target="_blank">segmentfault</a></li>
+						<li><a href="http://www.ityouknow.com/spring-boot" class="link-3" target="_blank">纯洁的微笑</a></li>
+						<li><a href="http://www.ruanyifeng.com/blog/" class="link-3" target="_blank">阮一峰</a></li>									<li><a href="https://github.com/wong2460/ITIndex" class="link-3" target="_blank">其他</a></li>	
+																															
+					</ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit">财经 · 投资</div>
+					<ul class="jj-list-con">
+						<li><a href="https://xueqiu.com/" class="link-3" target="_blank">雪球</a></li>				
+						<li><a href="http://www.mutongzixun.com/" class="link-3" target="_blank">股市牧童</a></li>																
+						<li><a href="https://www.taoguba.com.cn/" class="link-3" target="_blank">淘股吧</a></li>						
+						<li><a href="http://www.cninfo.com.cn/new/index" class="link-3" target="_blank">巨潮资讯</a></li>
+						
+						
+						<li><a href="http://data.10jqka.com.cn/rank/lxsz/" class="link-3" target="_blank">同花技术</a></li>
+						<li><a href="http://www.12371.cn/special/zzjhy/" class="link-3" target="_blank">政治局会议</a></li>
+                  
+                        <li><a href="http://data.eastmoney.com/report/stock.jshtml" class="link-3" target="_blank">东财研报</a></li>							
+						<li><a href="http://yanbao.stock.hexun.com/listnews.aspx?type=1" class="link-3" target="_blank">和讯研报</a></li>
+						<li><a href="file:///E:/myIndex/myindex1.html" class="link-3" target="_blank">其他</a></li>		
+					</ul>
+				</div>
+			    <div class="jj-list">
+					<div class="jj-list-tit">读书 · 视频 · 音乐</div>
+					<ul class="jj-list-con">						
+						<li><a href="https://v.qq.com/" class="link-3" target="_blank" >腾讯视频</a></li>						
+						<li><a href="https://www.youku.com/" class="link-3" target="_blank">优酷</a></li>
+						<li><a href="https://www.bilibili.com/" class="link-3" target="_blank">哔哩哔哩</a></li>
+
+						<li><a href="https://www.youtube.com/" class="link-3" target="_blank">youtube</a></li>
+						<li><a href="https://cli.im/" class="link-3" target="_blank" title="识别生成美化一应俱全">二维码</a></li>						
+						<li><a href="http://www.ireadweek.com/index.php?m=index&a=fenlei" class="link-3" target="_blank">周读</a></li>
+						<li><a href="https://weibomiaopai.com/" class="link-3" target="_blank">视频下载</a></li>
+                      	<li><a href="http://tool.mkblog.cn/music/" class="link-3" target="_blank">音乐下载</a></li>
+						<li><a href="https://music.163.com/" class="link-3" target="_blank">网易音乐</a></li>																				
+					</ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit">搜索 · 其他</div>
+					<ul class="jj-list-con">
+						<li><a href="https://naotu.baidu.com/home" class="link-3" target="_blank">百度脑图</a></li>
+						<li><a href="https://www.cupfox.com/" class="link-3" target="_blank">茶杯狐</a></li>									
+						<li><a href="https://www.dytt8.net/" class="link-3" target="_blank">电影天堂</a></li>												
+						<li><a href="https://www.bejson.com/" class="link-3" target="_blank">JSON工具</a></li>
+						
+						<li><a href="https://www.wandoujia.com/" class="link-3" target="_blank">APP下载</a></li>						
+						<li><a href="https://www.portablesoft.org/" class="link-3" target="_blank">便携软件</a></li>
+						<li><a href="https://www.jiumodiary.com/" class="link-3" target="_blank">电子书库</a></li>											
+						<li><a href="https://www.pexels.com/" class="link-3" target="_blank">图片</a></li>			
+						<li><a href="https://nba.hupu.com/" class="link-3" target="_blank">虎扑</a></li>
+            	
+					</ul>
+				</div>
+			</div>
+          <div class="footer1">Copyright © 2019 Hosted by <a href="https://dev.tencent.com/s/91110a83-0f2d-473f-9cb8-367d247e9244" style="color:#ffffff;" target="_blank">联系我  </a><a href="https://www.jianavi.cn/old/v1.html" style="color:#ffffff;" target="_blank">旧版  </a><a href="https://dev.tencent.com/s/9fb87376-80d7-44fa-bae8-68c1907669f7" style="color:#ffffff;" target="_blank">打赏</a></div>
+		</div>
+	</div>
+
+	<div class="footer">Copyright © 2019 <a href="https://dev.tencent.com/s/91110a83-0f2d-473f-9cb8-367d247e9244" style="color:#ffffff;" target="_blank">联系我   </a><a href="https://www.jianavi.cn/old/v1.html" style="color:#ffffff;" target="_blank">旧版   </a><a href="https://dev.tencent.com/s/9fb87376-80d7-44fa-bae8-68c1907669f7" style="color:#ffffff;" target="_blank">打赏   </a></div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+
+<script>
+	$(function(){
+		// $('body').height($('body')[0].clientHeight);
+        initpage();
+        $(window).resize(function()
+        {
+          initpage();
+        })
+ 
+        function initpage()
+        {
+          var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+          var _html = document.getElementsByTagName('html')[0];
+          view_width>640?_html.style.fontSize=640/16 +'px':_html.style.fontSize =view_width/16+'px';
+        }
+      });
+</script>
+</body>
+<!-- baidu -->
+<script type="text/javascript">
+	 var btn=$("#kw-2"),oUl=$(".keylist")[0];
+
+	 $("#qingkong").click(function(){
+	 	 oUl.style.display = 'none';
+	 })
+
+	 btn.keyup(function(){
+	 	   var value = this.value;
+            if (value) {
+                var oScript = document.createElement('script');
+                oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=aa'
+                document.body.appendChild(oScript);
+                oScript.remove();
+            } else if(value == 0){
+                oUl.style.display = 'none';
+            }
+
+	 })
+	function aa(data) {
+		//console.log(data);
+		oUl.style.display = 'block';
+		var list = data.s;
+		var str = '';
+		
+		for (var i = 0; i < list.length; i++) {
+			// 最多显示8行
+			if(i<8){
+				str += '<li>' +list[i] + '</li>';
+			}
+			
+		}
+		oUl.innerHTML = str;
+	}
+
+	$(".keylist").on('click','li',function(){
+		var value = $(this).text();
+		btn.val(value);
+		$('#su-2').click();
+		oUl.style.display = 'none';
+	});
+
+</script>
+</html>
