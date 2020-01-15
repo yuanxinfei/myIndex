@@ -121,9 +121,9 @@ $('.Select-box ul').hover(function(){
 $('.Select-box-2 ul').hover(function(){
 	$(this).css('height','auto')
 	},function(){
-		$(this).css('height','46px')
+		$(this).css('height','47px')
 		});
-$('.Select-box li').click(function(){
+/*$('.Select-box li').click(function(){
 	var _tihs = $(this).attr('class');
 	var _html = $(this).html();
 	if(_tihs == 'baidu_s'){
@@ -136,36 +136,70 @@ $('.Select-box li').click(function(){
                _tihs = 'https://www.bing.com/search';
                _name = 'q';
               }if(_tihs == 'miji_s'){
-					 _tihs = 'https://mijisou.com/';
+					 _tihs = 'https://www.dogedoge.com/results';
 					 _name = 'q';
 					}
 	$('.baidu form').attr('action',_tihs);
 	$('.this_s').html(_html);
 	$('#kw').attr('name',_name);
 	$('.Select-box ul').css('height','40px')
-	});
+	});*/
 $('.Select-box-2 li').click(function(){
 	var _tihs = $(this).attr('class');
 	var _html = $(this).html();
-	if(_tihs == 'baidu_s'){
+	var _name = 'wd';
+    if(_tihs == 'baidu_s'){
 		_tihs = 'https://www.baidu.com/s';
 		_name = 'wd';
-		}if(_tihs == 'google_s'){
-			 _tihs = 'https://www.google.com/search';
-			 _name = 'q';
-			}if(_tihs == 'bing_s'){
-               _tihs = 'https://www.bing.com/search';
-               _name = 'q';
-              }if(_tihs == 'miji_s'){
-					 _tihs = 'https://mijisou.com/';
-					 _name = 'q';
-					}
+	}if(_tihs == 'google_s'){
+		_tihs = 'https://www.google.com/search';
+		_name = 'q';
+	}if(_tihs == 'git_s'){
+        _tihs = 'https://github.com/search?utf8=✓&q=';
+        _name = 'q';
+    }if(_tihs == 'miji_s'){
+		_tihs = 'https://mijisou.com/';
+		_name = 'q';
+	}if(_tihs == 'zhihu_s'){
+		_tihs = 'https://www.zhihu.com/search?type=content&q=';
+		_name = 'q';
+	}if(_tihs == 'weibo_s'){
+		_tihs = 'https://s.weibo.com/weibo/';
+		_name = 'q';
+	}
 	$('.baidu form').attr('action',_tihs);
 	$('.this_s').html(_html);
 	$('#kw-2').attr('name',_name);
-	$('.Select-box-2 ul').css('height','48px')
-	});
+	$('.Select-box-2 ul').css('height','48px');
 
+	setCookie("_search_",_html+"_nln_"+_tihs+"_nln_"+_name);
+});
+
+function _search_(){
+	var aCookie = document.cookie.split(";");  
+
+	for (var i = 0; i < aCookie.length; i++) {  
+		var aCrumb = aCookie[i].split("=");  
+		if(aCrumb[0].toString().trim()=='order_list'){  
+			continue;  
+		}  
+		var name=unescape(aCrumb[0].trim());
+
+		if(aCrumb[0].toString().trim().indexOf("_search_")>-1){
+
+			var link= getCookie(name).split("_nln_");
+
+			
+			$('.baidu form').attr('action',link[1]);
+			$('.this_s').html(link[0]);
+			$('#kw-2').attr('name',link[2]);
+			$('.Select-box-2 ul').css('height','48px');
+		}
+
+	}
+
+}
+_search_();
 //清空输入框内容
 $('.qingkong').click(function(){
 		cls();
@@ -286,12 +320,7 @@ $('.list-link-4').hover(function(){
 	$('.layui-layer-tips').css('display','none')
 });
 
-// /*简历底部联系方式tips提示*/
-// function _tips(){
-// 	var tipsWidth = $('.tips-con').innerWidth();
-// 	$('.tips-con').css('margin-left',- tipsWidth / 2)
-// }
-// _tips();
+
 
 
 

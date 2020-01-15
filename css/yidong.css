@@ -7,7 +7,7 @@
 		height: 100%;
 		width: 100%;
 	}
-	/*å†…å®¹æ ·å¼ï¼Œä½¿ç”¨flexå¸ƒå±€*/
+	/*内容样式，使用flex布局*/
 	.content{
 		width: 15rem;
 		display: flex;
@@ -15,11 +15,10 @@
  		justify-content: space-around;
   		align-items: center;
   		/*height: 46rem;*/
-  		z-index: 999;
   		position: absolute;
   		top:26%;
 }
-	/*æœç´¢æ¡†æ€»ä½“æ ·å¼*/
+	/*搜索框总体样式*/
 	.baidu{
 		position: relative;
 		width: 14rem;
@@ -31,17 +30,14 @@
 	.baidu-2{
 		height: 2.6rem;
 	}
-	/*æ•´ä¸ªè¡¨å•å®½åº¦*/
-	.baidu-2 form{
-		width: 15rem;
-	}
-/*å–æ¶ˆå¤šçº§æœç´¢ï¼Œåªä¿ç•™ç™¾åº¦*/
+
+/*取消多级搜索，只保留百度*/
 	#Select-2{
 		position: absolute;
 		left: 0;
 	}
 
-	.Select-box-2 ul{
+	.Select-box-2{
 		display: none;
 		float: none;
 	}
@@ -51,28 +47,26 @@
 		display: none;
 		float: none;
 	}
-	/*è¾“å…¥æ¡†æ ·å¼*/
+	/*输入框样式*/
 	#kw-2{
 		width: 10rem;
 		height: 1.2rem;
 		border:0;
 		position: absolute;
-		padding-left: 0;
-		text-indent: 2em;
+		padding-left: 10px;
 	}
-	/*æœç´¢æ¡†æ ·å¼*/
-	#su-2{
-		width: 3rem;
-		height: 2.22rem;
-		text-align: center;
-		line-height: 1rem;
-		position: absolute;
-		background-color: blue;
-		border-color: blue;
-		right: 1rem;
-		border-radius: 0;
+	/*搜索框样式*/
+	#su-2 {
+	    width: 3rem;
+	    text-align: center;
+	    line-height: 0rem;
+	    position: absolute;
+	    background-color: blue;
+	    border-color: blue;
+	    right: 1rem;
+	    border-radius: 0;
+	    height: 1.2rem;
 	}
-
 	#su-2:hover{
 		background-color: blue;
 	}
@@ -82,19 +76,19 @@
 		box-shadow: none;	
 	}
 	
-	/*contentä¸‹çš„æ‰€æœ‰divå®½åº¦*/
+	/*content下的所有div宽度*/
 	.content div{
 		width: 100%;
 	}
-	/*æ¯ä¸ªé€‰æ‹©æ¡†çš„å®½åº¦*/
+	/*每个选择框的宽度*/
 	.content li{
 		width: 4.69rem;
 	}
-	/*æ”¾å¼ƒcontentå¤–çš„footer*/
+	/*放弃content外的footer*/
 	.footer{  
 		display: none;
 	}
-	/*ç§»åŠ¨ç«¯ä½¿ç”¨çš„footer*/
+	/*移动端使用的footer*/
 	.footer1{
 		display: block;
 		text-align: center;

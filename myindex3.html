@@ -17,7 +17,7 @@
 <style type="text/css">
 
 body {	
-    background-image: url(img/04.jpg);
+    background-image: url(img/01.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -107,7 +107,7 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, form, dl, dt, dd {
     font-size: 23px;
 }
 span.zdy_edit {
-    
+    background: url(img/edit.ico);
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
@@ -249,7 +249,27 @@ var _hmt = _hmt || [];
 
 <body>
 	
-	
+	<div class="zdy_button" onclick="zyd_show();"><img src="img/cl.ico" ></div>
+	<div class="zdy">
+		<div class="zdy_content">
+			<div class="zdy_top"><span class="zdy_edit"></span>自定义链接<span class="zdy_close" onclick="zdy_close();"></span></div>
+			<div class="zdy_mi">
+				<div class="z_m_i">
+					<span class="z_i_img_1"></span>
+					<input type="text" class="zdy_input zdy_name" placeholder="微博">
+				</div>
+				<div class="z_m_i">
+					<span class="z_i_img_2"></span>
+					<input type="text" class="zdy_input zdy_link" placeholder="http://www.weibo.com/">
+				</div>
+				<div><font size="2" color="gray">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请注意：数据是临时存储在本地电脑上，数据丢失无法找回</font></div>			
+			</div>
+			<div class="zdy_foot">
+				<div class="zdy_false zdy_b" onclick="zdy_false();">取消</div>
+				<div class="zdy_true zdy_b" onclick="zdy_true();">确定</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript">
 		//写cookies
 		function setCookie(name,value)
@@ -381,13 +401,11 @@ var _hmt = _hmt || [];
 			<form name="f" action="https://www.baidu.com/s" target="_blank">
 				<div class="Select-box-2" id="baidu">
 					<ul>
-						<li class="this_s"></li>
-						<li class="miji_s">秘 迹</li>
+						<li class="this_s">百 度</li>
+	                  	<li class="miji_s">多 吉</li>
+						<li class="bing_s">必 应</li>
 						<li class="google_s">谷 歌</li>
-						<li class="baidu_s">百 度</li>
-						<li class="zhihu_s">知 乎</li>
-						<li class="weibo_s">微 博</li>										
-						<li class="git_s">G I T</li>															
+						<li class="baidu_s">百 度</li>															
 					</ul>
 				</div>
 				<div class="in5">
@@ -406,92 +424,89 @@ var _hmt = _hmt || [];
 			<div class="jianjie">
 				<div class="jj-list">
 					<div class="jj-list-tit">学习 · 生活</div>
-					<ul class="jj-list-con">
-						<li><a href="https://www.jd.com/" class="link-3" target="_blank">京东</a></li>
-						<li><a href="https://www.tmall.com/" class="link-3" target="_blank">天猫</a></li>
-						<li><a href="https://www.taobao.com/" class="link-3" target="_blank">淘宝</a></li>					
-						<li><a href="https://weibo.com/" class="link-3" target="_blank">微博</a></li>
-						<li><a href="https://www.zhihu.com/" class="link-3" target="_blank">知乎</a></li>	
-                        <li><a href="https://hao.qq.com/qita/youxiang.html" class="link-3" target="_blank">邮箱</a></li>			
-                        <li><a href="https://www.cn-ki.net/" class="link-3" target="_blank">iData</a></li>	
-						<li><a href="https://www.mvyxws.com//" class="link-3" target="_blank">医学微视</a></li>
-						<li><a href="https://twitter.com/" class="link-3" target="_blank">twitter</a></li>	
-
+					<ul class="jj-list-con _b">
+						<li><a href="https://www.taobao.com/" class="link-3" target="_blank" rel="nofollow">淘宝</a></li>
+						<li><a href="https://www.jd.com/" class="link-3" target="_blank" rel="nofollow">京东</a></li>
+						<li><a href="http://123.sogou.com/shwz/yinhang.html" class="link-3" target="_blank" rel="nofollow">银行</a></li>
+						<li><a href="https://www.amap.com/" class="link-3" target="_blank" rel="nofollow">地图</a></li>					
+						<li><a href="https://translate.google.cn/" class="link-3" target="_blank" rel="nofollow">翻译</a></li>
+                        <li><a href="https://hao.qq.com/qita/youxiang.html" class="link-3" target="_blank" rel="nofollow">邮箱</a></li>				
+						<li><a href="https://www.runoob.com/" class="link-3" target="_blank" rel="nofollow">菜鸟教程</a></li>
+						<li><a href="https://study.163.com/" class="link-3" target="_blank" rel="nofollow">云课堂</a></li>
+						<li><a href="https://www.icourse163.org/" class="link-3" target="_blank" rel="nofollow">MOOC</a></li>					
 					</ul>
 				</div>
 			    <div class="jj-list">
-					<div class="jj-list-tit">常用 · 工作</div>
-					<ul class="jj-list-con">
-						
-						<li><a href="http://ehr.aisino.com" class="link-3" target="_blank">EHR</a></li>
-						<li><a href="http://aos.aisino.com/newdoc/" class="link-3" target="_blank">AOS</a></li>
-						<li><a href="http://oa.aisino.com" class="link-3" target="_blank">OA</a></li>
-						<li><a href="http://mail.hichina.com/" class="link-3" target="_blank">阿里邮箱</a></li>
-						<li><a href="http://192.168.35.64:8080/ProjectManage/pt/canvas?formid=a8login" class="link-3" target="_blank">敏捷</a></li>
-						<li><a href="http://192.168.29.254:7001/csgl_Test1/" class="link-3" target="_blank">缺陷</a></li>
-						<li><a href="http://bpmfk.aisino.com/login/Login.jsp" class="link-3" target="_blank">报销</a></li>
-						<li><a href="http://172.16.2.122:8085/ZHYW/pt/canvas?formid=zh_sys_login" class="link-3" target="_blank">CRM</a></li>
-						<li><a href="http://192.168.35.230:8080/Ukey/canvas/login2" class="link-3" target="_blank">Ukey</a></li>											
+					<div class="jj-list-tit">常用 · 社区</div>
+					<ul class="jj-list-con _b">
+						<li><a href="https://wx.qq.com/" class="link-3" target="_blank" rel="nofollow">微信</a></li>
+						<li><a href="https://weibo.com/" class="link-3" target="_blank" rel="nofollow">微博</a></li>
+						<li><a href="https://www.zhihu.com/" class="link-3" target="_blank" rel="nofollow">知乎</a></li>
+						<li><a href="https://tieba.baidu.com/" class="link-3" target="_blank" rel="nofollow">贴吧</a></li>
+						<li><a href="http://www.soomal.com/" class="link-3" target="_blank" rel="nofollow">Soomal</a></li>
+						<li><a href="https://topbook.cc/overview" class="link-3" target="_blank" rel="nofollow">Topbook</a></li>
+						<li><a href="https://github.com/" class="link-3" target="_blank" rel="nofollow">GitHub</a></li>
+						<li><a href="https://www.douban.com/" class="link-3" target="_blank" rel="nofollow">豆瓣</a></li>
+						<li><a href="https://www.v2ex.com/" class="link-3" target="_blank" rel="nofollow">V2EX</a></li>												
 					</ul>
 				</div>
 				<div class="jj-list">
-					<div class="jj-list-tit">学习 · 博客</div>
-					<ul class="jj-list-con">
-						<li><a href="https://github.com/spring2go" class="link-3" target="_blank">波波微课</a></li>
-						<li><a href="http://www.iocoder.cn/categories/Apollo/" class="link-3" target="_blank">芋道源码</a></li>	
-						<li><a href="https://developer.aliyun.com/group" class="link-3" target="_blank">阿里开发</a></li>
-						<li><a href="https://zhuanlan.zhihu.com/ctriptech" class="link-3" target="_blank">携程技术</a></li>	
-						<li><a href="https://tech.meituan.com/" class="link-3" target="_blank">美团技术</a></li>	
-						<li><a href="https://segmentfault.com/t/%E6%9E%B6%E6%9E%84" class="link-3" target="_blank">segmentfault</a></li>
-						<li><a href="http://www.ityouknow.com/spring-boot" class="link-3" target="_blank">纯洁的微笑</a></li>
-						<li><a href="http://www.ruanyifeng.com/blog/" class="link-3" target="_blank">阮一峰</a></li>									<li><a href="https://github.com/wong2460/ITIndex" class="link-3" target="_blank">其他</a></li>	
-																															
+					<div class="jj-list-tit">影音 · 娱乐</div>
+					<ul class="jj-list-con _b">
+						<li><a href="https://www.iqiyi.com/" class="link-3" target="_blank" rel="nofollow">爱奇艺</a></li>
+						<li><a href="https://v.qq.com/" class="link-3" target="_blank" rel="nofollow">腾讯视频</a></li>	
+						<li><a href="https://www.bilibili.com/" class="link-3" target="_blank" rel="nofollow">哔哩哔哩</a></li>						
+						<li><a href="https://www.mgtv.com/" class="link-3" target="_blank" rel="nofollow">芒果TV</a></li>
+						<li><a href="https://www.youku.com/" class="link-3" target="_blank" rel="nofollow">优酷</a></li>											
+						<li><a href="https://music.163.com/" class="link-3" target="_blank" rel="nofollow">音乐</a></li>
+						<li><a href="https://in.gimy.tv/" class="link-3" target="_blank" rel="nofollow">剧迷</a></li>											
+						<li><a href="http://www.zmz2019.com/" class="link-3" target="_blank" rel="nofollow">人人影视</a></li>
+						<li><a href="https://qinmei.video/" class="link-3" target="_blank" rel="nofollow">Qinmei</a></li>																										
 					</ul>
 				</div>
 				<div class="jj-list">
-					<div class="jj-list-tit">财经 · 投资</div>
+					<div class="jj-list-tit">发现 · 世界</div>
 					<ul class="jj-list-con">
-						<li><a href="https://xueqiu.com/" class="link-3" target="_blank">雪球</a></li>				
-						<li><a href="http://www.mutongzixun.com/" class="link-3" target="_blank">股市牧童</a></li>																
-						<li><a href="https://www.taoguba.com.cn/" class="link-3" target="_blank">淘股吧</a></li>						
-						<li><a href="http://www.cninfo.com.cn/new/index" class="link-3" target="_blank">巨潮资讯</a></li>
-						
-						
-						<li><a href="http://data.10jqka.com.cn/rank/lxsz/" class="link-3" target="_blank">同花技术</a></li>
-						<li><a href="http://www.12371.cn/special/zzjhy/" class="link-3" target="_blank">政治局会议</a></li>
-                  
-                        <li><a href="http://data.eastmoney.com/report/stock.jshtml" class="link-3" target="_blank">东财研报</a></li>							
-						<li><a href="http://yanbao.stock.hexun.com/listnews.aspx?type=1" class="link-3" target="_blank">和讯研报</a></li>
-						<li><a href="file:///E:/myIndex/myindex1.html" class="link-3" target="_blank">其他</a></li>		
+						<li><a href="https://tophub.today/" class="link-3" target="_blank" rel="nofollow">今日热榜</a></li>
+						<li><a href="https://news.ifeng.com/" class="link-3" target="_blank" rel="nofollow">凤凰资讯</a></li>		
+						<li><a href="https://houxu.app/" class="link-3" target="_blank" rel="nofollow">后续</a></li>						
+						<li><a href="https://jikipedia.com/" class="link-3" target="_blank" rel="nofollow">小鸡词典</a></li>							
+						<li><a href="https://sspai.com/" class="link-3" target="_blank" rel="nofollow">少数派</a></li>	
+						<li><a href="https://youquhome.com/" class="link-3" target="_blank" rel="nofollow">有趣网址</a></li>						
+						<li><a href="https://ef.zhiweidata.com/#!/index" class="link-3" target="_blank" rel="nofollow">知微事见</a></li>
+						<li><a href="https://ac.scmor.com/" class="link-3" target="_blank" rel="nofollow">学术镜像</a></li>
+						<li><a href="https://site.nihaowang.com/" class="link-3" target="_blank" rel="nofollow">外网导航</a></li>
+                        
 					</ul>
 				</div>
 			    <div class="jj-list">
-					<div class="jj-list-tit">读书 · 视频 · 音乐</div>
+					<div class="jj-list-tit">在线 · 工具</div>
+					<ul class="jj-list-con">									
+						<li><a href="http://xiuxiu.web.meitu.com/" class="link-3" target="_blank" rel="nofollow">在线修图</a></li>
+						<li><a href="http://www.qmaile.com/" class="link-3" target="_blank" rel="nofollow">VIP解析</a></li>
+						<li><a href="https://cli.im/" class="link-3" target="_blank" rel="nofollow">二维码</a></li>						
+						<li><a href="http://mail.bccto.me/?lang=cn" class="link-3" target="_blank" rel="nofollow">临时邮箱</a></li>
+						<li><a href="https://www.pdflibr.com/" class="link-3" target="_blank" rel="nofollow">临时短信</a></li>
+						<li><a href="https://convertio.co/zh/" class="link-3" target="_blank" rel="nofollow">格式转换</a></li>
+						<li><a href="http://www.hiwenku.com/" class="link-3" target="_blank" rel="nofollow">文档下载</a></li>
+						<li><a href="https://weibomiaopai.com/" class="link-3" target="_blank" rel="nofollow">视频下载</a></li>
+                      	<li><a href="http://www.musictool.top" class="link-3" target="_blank" rel="nofollow">音乐下载</a></li>
+																										
+					</ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit">搜索 · 资源</div>
 					<ul class="jj-list-con">						
-						<li><a href="https://v.qq.com/" class="link-3" target="_blank" >腾讯视频</a></li>						
-						<li><a href="https://www.youku.com/" class="link-3" target="_blank">优酷</a></li>
-						<li><a href="https://www.bilibili.com/" class="link-3" target="_blank">哔哩哔哩</a></li>
-
-						<li><a href="https://www.youtube.com/" class="link-3" target="_blank">youtube</a></li>
-						<li><a href="https://cli.im/" class="link-3" target="_blank" title="识别生成美化一应俱全">二维码</a></li>						
-						<li><a href="http://www.ireadweek.com/index.php?m=index&a=fenlei" class="link-3" target="_blank">周读</a></li>
-						<li><a href="https://weibomiaopai.com/" class="link-3" target="_blank">视频下载</a></li>
-                      	<li><a href="http://tool.mkblog.cn/music/" class="link-3" target="_blank">音乐下载</a></li>
-						<li><a href="https://music.163.com/" class="link-3" target="_blank">网易音乐</a></li>																				
-					</ul>
-				</div>
-				<div class="jj-list">
-					<div class="jj-list-tit">搜索 · 其他</div>
-					<ul class="jj-list-con">
-						<li><a href="https://naotu.baidu.com/home" class="link-3" target="_blank">百度脑图</a></li>
-						<li><a href="https://www.cupfox.com/" class="link-3" target="_blank">茶杯狐</a></li>									
-						<li><a href="https://www.dytt8.net/" class="link-3" target="_blank">电影天堂</a></li>												
-						<li><a href="https://www.bejson.com/" class="link-3" target="_blank">JSON工具</a></li>
-						
-						<li><a href="https://www.wandoujia.com/" class="link-3" target="_blank">APP下载</a></li>						
-						<li><a href="https://www.portablesoft.org/" class="link-3" target="_blank">便携软件</a></li>
-						<li><a href="https://www.jiumodiary.com/" class="link-3" target="_blank">电子书库</a></li>											
-						<li><a href="https://www.pexels.com/" class="link-3" target="_blank">图片</a></li>								            	
+						<li><a href="https://www.cupfox.com/" class="link-3" target="_blank" rel="nofollow">茶杯狐</a></li>									
+						<li><a href="https://www.dy2018.com" class="link-3" target="_blank" rel="nofollow">电影天堂</a></li>												
+						<li><a href="https://www.coolist.net/" class="link-3" target="_blank" rel="nofollow">酷软清单</a></li>	
+						<li><a href="https://minapp.com/" class="link-3" target="_blank" rel="nofollow">知晓程序</a></li>
+						<li><a href="https://www.wandoujia.com/" class="link-3" target="_blank" rel="nofollow">APP下载</a></li>						
+						<li><a href="https://www.portablesoft.org/" class="link-3" target="_blank" rel="nofollow">便携软件</a></li>
+						<li><a href="https://www.jiumodiary.com/" class="link-3" target="_blank" rel="nofollow">电子书</a></li>											
+						<li><a href="https://www.pexels.com/" class="link-3" target="_blank" rel="nofollow">图片</a></li>			
+						<li><a href="http://www.zimuku.la/" class="link-3" target="_blank" rel="nofollow">字幕库</a></li>
+            	
 					</ul>
 				</div>
 				<div class="jj-list zdy_list" style="display: none;">
@@ -504,7 +519,7 @@ var _hmt = _hmt || [];
 		</div>
 	</div>
 
-	
+	<div class="footer">Copyright © 2020 <a href="https://www.appts.cn/" style="color:#ffffff;" target="_blank" rel="nofollow">软件探索 </a><a href="https://support.qq.com/products/93263" style="color:#ffffff;" target="_blank" rel="nofollow">反馈  </a> <a href="https://support.qq.com/products/93263/faqs/55166" style="color:#ffffff;" target="_blank" rel="nofollow">打赏  </a>
 
 <script type="text/javascript" src="js/js.js"></script>
 

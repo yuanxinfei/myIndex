@@ -8,7 +8,7 @@
 		width: 100%;
 		font-size: 32px;
 	}
-	/*å†…å®¹æ ·å¼ï¼Œä½¿ç”¨flexå¸ƒå±€*/
+	/*内容样式，使用flex布局*/
 	.content{
 		width: 15rem;
 		display: flex;
@@ -20,7 +20,7 @@
   		position: absolute;
   		top:10rem;
 }
-	/*æœç´¢æ¡†æ€»ä½“æ ·å¼*/
+	/*搜索框总体样式*/
 	.baidu{
 		position: relative;
 		width: 14rem;
@@ -32,11 +32,11 @@
 	.baidu-2{
 		height: 2.6rem;
 	}
-	/*æ•´ä¸ªè¡¨å•å®½åº¦*/
+	/*整个表单宽度*/
 	.baidu-2 form{
 		width: 15rem;
 	}
-/*å–æ¶ˆå¤šçº§æœç´¢ï¼Œåªä¿ç•™ç™¾åº¦*/
+/*取消多级搜索，只保留百度*/
 	#Select-2{
 		position: absolute;
 		left: 0;
@@ -52,7 +52,7 @@
 		display: none;
 		float: none;
 	}
-	/*è¾“å…¥æ¡†æ ·å¼*/
+	/*输入框样式*/
 	#kw-2{
 		width: 10rem;
 		height: 1.2rem;
@@ -61,7 +61,7 @@
 		padding-left: 0;
 		text-indent: 2em;
 	}
-	/*æœç´¢æ¡†æ ·å¼*/
+	/*搜索框样式*/
 	#su-2{
 		width: 3rem;
 		height: 2.22rem;
@@ -82,19 +82,19 @@
 		box-shadow: none;	
 	}
 	
-	/*contentä¸‹çš„æ‰€æœ‰divå®½åº¦*/
+	/*content下的所有div宽度*/
 	.content div{
 		width: 100%;
 	}
-	/*æ¯ä¸ªé€‰æ‹©æ¡†çš„å®½åº¦*/
+	/*每个选择框的宽度*/
 	.content li{
 		width: 4.69rem;
 	}
-	/*æ”¾å¼ƒcontentå¤–çš„footer*/
+	/*放弃content外的footer*/
 	.footer{  
 		display: none;
 	}
-	/*ç§»åŠ¨ç«¯ä½¿ç”¨çš„footer*/
+	/*移动端使用的footer*/
 	.footer1{
 		display: block;
 		text-align: center;
