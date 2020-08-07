@@ -166,12 +166,14 @@ $('.Select-box-2 li').click(function(){
 	}if(_tihs == 'weibo_s'){
 		_tihs = 'https://s.weibo.com/weibo/';
 		_name = 'q';
+	}if(_tihs == 'baidu_i'){
+		_tihs = 'http://index.baidu.com/v2/main/index.html#/trend/123?words=123';
+		_name = 'words';
 	}
 	$('.baidu form').attr('action',_tihs);
 	$('.this_s').html(_html);
 	$('#kw-2').attr('name',_name);
 	$('.Select-box-2 ul').css('height','48px');
-
 	setCookie("_search_",_html+"_nln_"+_tihs+"_nln_"+_name);
 });
 
